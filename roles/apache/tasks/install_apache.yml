@@ -1,0 +1,13 @@
+---
+- apt: 
+    name: apache2
+    state: present
+  register: apache_installed
+  when: ansible_distribution == "Debian"
+
+- yum:
+    name: httpd
+    state: present
+  register: apache_installed
+  when: ansible_distribution == "CentOS"
+...

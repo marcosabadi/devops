@@ -1,0 +1,6 @@
+---
+pacotes_redhat:
+        - vim
+        - epel-release
+        - zip
+        - unzip

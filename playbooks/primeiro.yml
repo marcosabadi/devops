@@ -1,0 +1,10 @@
+---
+- name: Meu primeiro YAML
+  hosts: 127.0.0.1
+  connection: local
+  tasks: 
+    - name: Instala pacotes
+      yum: 
+        name: wget
+        state: present
+...
